@@ -1664,7 +1664,7 @@ img{
 .services-block .inner-box .arrow{
 	position:absolute;
 	right:0px;
-	bottom:-50px;
+	bottom:0px;
 	width:65px;
 	height:48px;
 	z-index:1;
@@ -2088,7 +2088,12 @@ img{
 	background-position:left bottom;
 	background-repeat:no-repeat;
 }
-
+.practice-section .custom-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 .practice-section .inner-container{
 	position:relative;
 	border:1px solid #e1e1e1;
@@ -2116,7 +2121,6 @@ img{
 
 .practice-section .inner-container .practice-block{
 	padding:0px;
-	float:left;
 }
 
 .practice-section .inner-container .practice-block:nth-child(4n + 0) .inner-box{
@@ -2133,6 +2137,7 @@ img{
 	padding:40px 15px;
 	background-color:#ffffff;
 	border-right:1px solid #e1e1e1;
+	height: 360px;
 }
 
 .practice-block .inner-box:before{
@@ -2158,7 +2163,6 @@ img{
 }
 
 .practice-block .inner-box .icon{
-	position:relative;
 	font-size:60px;
 	color:#00204c;
 	line-height:1em;
@@ -2209,7 +2213,8 @@ img{
 }
 
 .practice-block .inner-box .arrow{
-	position:relative;
+	position: absolute;
+	bottom: 0px;
 	color:#e1a122;
 	font-size:20px;
 	transition:all 500ms ease;
